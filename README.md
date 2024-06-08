@@ -84,6 +84,15 @@ The arc-eager oracle is a transition-based parsing algorithm that efficiently co
 This method is both time-efficient and suitable for real-time applications.
 
 ### Model Architecture
+The model is designed with the following architecture:
+
+- Input Layer
+- Embedding layer
+- Flatten layer
+- Zero or more Dense Layers with ReLU activation
+- Dropout Layers for each Dense Layer with a dropout rate
+- Dense Layers for Computation of the two Results with ReLU activation
+- Output Layers for the Transition and Relation output
 
 ### Evaluation
 The evaluation step involves:
